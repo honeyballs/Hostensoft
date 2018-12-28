@@ -1,0 +1,27 @@
+{
+  "name": "hostensoft",
+  "version": "1.0.0",
+  "description": "A small application to create and run Docker images from uploaded folders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "nodemon ./index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honeyballs/Hostensoft.git"
+  },
+  "author": "Yannick Bals",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/honeyballs/Hostensoft/issues"
+  },
+  "homepage": "https://portfolio.bals.io",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
