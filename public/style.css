@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body {
+    background: #574b90;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+#content {
+    width: 70%;
+    background: white;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 10px 10px 22px -3px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 10px 10px 22px -3px rgba(0, 0, 0, 0.22);
+    box-shadow: 10px 10px 22px -3px rgba(0, 0, 0, 0.22);
+    color: #574b90;
+}
+
+#upload-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+label {
+    margin: 20px 0 10px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #574b90;
+    font-size: 1em;
+    width: 300px;
+    border: 0;
+    border-bottom: 2px solid #574b90;
+    outline: 0;
+    border-radius: 0;
+    padding-bottom: 3px;
+    background: white;
+    margin-bottom: 30px;
+}
+
+#drag-box {
+    width: 100%;
+    height: 150px;
+    margin: 20px 0 30px;
+    border: 2px dashed #3dc1d3;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#file-box {
+    display: none;
+}
+
+#alt-button {
+    cursor: pointer;
+    display: block;
+    color: #3dc1d3;
+    width: 150px;
+    margin: 55px auto 0;
+    padding: 10px 0;
+}
+
+#alt-button:hover {
+    color: #63cdda;
+}
+
+#run-text {
+    width: 300px;
+    border: 0;
+    border-bottom: 2px solid #574b90;
+    font-size: 1em;
+    color: #574b90;
+    outline: 0;
+}
+
+#ok-button {
+    margin: 50px 0 20px;
+    background-color: #574b90;
+    color: white;
+    font-size: 1em;
+    padding: 10px 5px;
+    border: 1px solid #574b90;
+    cursor: pointer;
+}
+
+#ok-button:hover {
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease;
+    background-color: white;
+    color: #574b90;
+}

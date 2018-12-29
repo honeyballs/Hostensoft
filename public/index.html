@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Hostensoft</title>
 </head>
+
 <body>
-    <h1>Hostensoft</h1>
+
+    <div id="content">
+
+        <div id="header">
+            <h1 id="headline">Hostensoft</h1>
+            <h2 id="headline-2">Simply host projects on a Raspberry Pi.</h2>
+        </div>
+
+        <form id="upload-form">
+            <p>Upload your project folder with the file dialog or by dragging and dropping it or its contents onto the
+                dashed region.</p>
+
+            <label id="select-label" for="type-select">Select the type of project to host.</label>
+            <select id="type-select">
+                <option>Static web project</option>
+                <option>Node project</option>
+            </select>
+
+            <div id="drag-box">
+                <input type="file" id="file-box" multiple webkitdirectory directory onchange="handleFiles(this.files)">
+                <label id="alt-button" for="file-box">Select some folder.</label>
+            </div>
+
+            <label id="run-label" for="run-text">Enter the run command to start your app if necessary.</label>
+            <input type="text" id="run-text">
+
+            <button id="ok-button">Host my app!</button>
+
+        </form>
+
+    </div>
+
 </body>
+
 </html>
