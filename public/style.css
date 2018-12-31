@@ -76,6 +76,10 @@ select {
     border-color: #3dc1d3;
 }
 
+#drag-box.gotten {
+    border-color: lightgreen;
+}
+
 #file-box {
     display: none;
 }

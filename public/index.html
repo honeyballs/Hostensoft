@@ -20,7 +20,7 @@
             <h2 id="headline-2">Simply host projects on a Raspberry Pi.</h2>
         </div>
 
-        <form id="upload-form">
+        <form id="upload-form" enctype="multipart/form-data">
             <p>Upload your project folder with the file dialog or by dragging and dropping it or its contents onto the
                 dashed region.</p>
 
@@ -31,13 +31,13 @@
             </select>
 
             <div id="drag-box">
-                <input type="file" id="file-box" multiple webkitdirectory directory onchange="handleFiles(this.files)">
+                <input type="file" id="file-box" multiple webkitdirectory directory>
                 <label id="alt-button" for="file-box">Select some folder.</label>
             </div>
 
             <label id="run-label" for="run-text">Enter the run command to start your app if necessary.</label>
             <input type="text" id="run-text">
-
+            
             <button id="ok-button">Host my app!</button>
 
         </form>

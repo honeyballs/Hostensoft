@@ -19,7 +19,8 @@
   },
   "homepage": "https://portfolio.bals.io",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "multer": "^1.4.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
